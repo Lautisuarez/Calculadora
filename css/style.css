@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* UTILIDADES */
+.contenedor{
+    max-width: 80%;
+    margin: 0 auto;
+}
