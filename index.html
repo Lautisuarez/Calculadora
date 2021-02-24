@@ -24,25 +24,26 @@
             <div class="pantalla">
                 <input type="text" placeholder="0" id="pantalla" disabled>
             </div>
-            <div class="botones" id="botones">
-                <a href="#" value="7">7</a>
-                <a href="#" value="8">8</a>
-                <a href="#" value="9">9</a>
-                <a href="#" value="4">4</a>
-                <a href="#" value="5">5</a>
-                <a href="#" value="6">6</a>
-                <a href="#" value="1">1</a>
-                <a href="#" value="2">2</a>
-                <a href="#" value="3">3</a>
-                <a href="#" value="0">0</a>
-                <a href="#" value=".">.</a>
-                <a href="#" value="=">=</a>
+            <div class="botones" id="botones" data-dead="dead">
+                <a href="#" value="7" data-number="7">7</a>
+                <a href="#" value="8" data-number="8">8</a>
+                <a href="#" value="9" data-number="9">9</a>
+                <a href="#" value="4" data-number="4">4</a>
+                <a href="#" value="5" data-number="5">5</a>
+                <a href="#" value="6" data-number="6">6</a>
+                <a href="#" value="1" data-number="1">1</a>
+                <a href="#" value="2" data-number="2">2</a>
+                <a href="#" value="3" data-number="3">3</a>
+                <a href="#" value="0" data-number="0">0</a>
+            </div>
+            <div class="igual" id="igual">
+                <a href="#" value="=" data-operation="igual">=</a>
             </div>
             <div class="funciones" id="funciones">
-                <a href="#" value="*">X</a>
-                <a href="#" value="/">%</a>
-                <a href="#" value="+">+</a>
-                <a href="#" value="-">-</a>
+                <a href="#" value="mul" data-operation="mul">x</a>
+                <a href="#" value="div" data-operation="div">%</a>
+                <a href="#" value="sum" data-operation="sum">+</a>
+                <a href="#" value="res" data-operation="res">-</a>
             </div>
             <div class="borrar" id="borrar">
                 <a href="#">AC</a>
