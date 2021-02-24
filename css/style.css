@@ -28,10 +28,14 @@ a{
 
 /* UTILIDADES */
 .contenedor{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
 }
-
+@media (min-width: 768px) {
+    .contenedor{
+        max-width: 80%;
+    }
+}
 /* NAVEGACIÓN */
 .nav h1{
     font-weight: 400;
@@ -62,12 +66,18 @@ a{
 }
 .pantalla input{
     width: 100%;
-    height: 10rem;
-    font-size: 5rem;
+    height: 6rem;
+    font-size: 3rem;
     background-color: var(--primaryLigth);
     border: 1px solid var(--secondary);
     border-radius: 1rem;
     padding-left: 2rem;
+}
+@media (min-width: 768px) {
+    .pantalla input{
+        height: 10rem;
+        font-size: 5rem;
+    }
 }
 .botones{
     grid-column: 1/4;
@@ -75,11 +85,11 @@ a{
     display: grid;
     grid: repeat(4,1fr) / repeat(3,1fr);
     color: var(--letter);
-    gap: 1rem;
-    padding: 3rem;
+    gap: .5rem;
+    padding: .5rem;
 }
 .botones a{
-    font-size: 3rem;
+    font-size: 2rem;
     border: 1px solid var(--letter);
     background-color: var(--secondary);
     display: flex;
@@ -94,13 +104,22 @@ a{
     background-color: var(--primary);
     color: var(--secondary);
 }
+@media (min-width: 768px) {
+    .botones{
+        padding: 3rem;
+        gap: 1rem;
+    }
+    .botones a{
+        font-size: 3rem;
+    }
+}
 .funciones{
     grid-column: 4/6;
     grid-row: 4/6;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
-    padding: .5rem 3rem 3rem 0;
+    padding: .5rem;
 }
 .funciones a{
     display: flex;
@@ -108,7 +127,7 @@ a{
     justify-content: center;
     background-color: var(--secondary);
     border: 1px solid var(--letter);
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primary);
     border-radius: 1rem;
     transition: .5s;
@@ -118,13 +137,21 @@ a{
     background-color: var(--primary);
     color: var(--secondary);
 }
+@media (min-width: 768px) {
+    .funciones{
+        padding: .5rem 3rem 3rem 0;
+    }
+    .funciones a{
+        font-size: 3rem;
+    }
+}
 .igual{
     grid-column: 4/6;
     grid-row: 3/4;
-    font-size: 5rem;
-    margin: 2rem 3rem 1rem 0;
+    margin: .5rem;
 }
 .igual a{
+    font-size: 3rem;
     background-color: var(--secondary);
     display: flex;
     align-items: center;
@@ -135,16 +162,23 @@ a{
     height: 100%;
     color: var(--primary);
 }
-
+@media (min-width: 768px) {
+    .igual{
+        margin: 2rem 3rem 1rem 0;
+    }
+    .igual a{
+        font-size: 5rem;
+    }
+}
 .borrar{
     grid-column: 4/6;
     grid-row: 2/3;
-    font-size: 5rem;
+    font-size: 3rem;
     background-color: var(--primaryLigth);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem 3rem 0 0;
+    margin: .5rem;
     transition: .5s;
     border: 1px solid var(--letter);
     border-radius: 1rem;
@@ -154,9 +188,16 @@ a{
     cursor: pointer;
 }
 .borrar a{
-    color: var(--letter);
+    color: var(--secondaryLigth);
+    font-weight: 300;
     transition: .3s;
 }
 .borrar a:hover{
     color: var(--primaryLigth);
+}
+@media (min-width: 768px) {
+    .borrar{
+        margin: 3rem 3rem 0 0;
+        font-size: 5rem;
+    }
 }
