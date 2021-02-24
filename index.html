@@ -5,11 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- CSS CUSTOM -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- NAVEGACIÓN -->
+    <nav class="contenedor nav">
+        <h1>Calculadora<b>App</b></h1>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+        <!-- APLICACIÓN -->
+        <div class="app">
+            <div class="pantalla">
+                <input type="text" placeholder="0" id="pantalla" disabled>
+            </div>
+            <div class="botones" id="botones">
+                <a href="#" value="7">7</a>
+                <a href="#" value="8">8</a>
+                <a href="#" value="9">9</a>
+                <a href="#" value="4">4</a>
+                <a href="#" value="5">5</a>
+                <a href="#" value="6">6</a>
+                <a href="#" value="1">1</a>
+                <a href="#" value="2">2</a>
+                <a href="#" value="3">3</a>
+                <a href="#" value="0">0</a>
+                <a href="#" value=".">.</a>
+                <a href="#" value="=">=</a>
+            </div>
+            <div class="funciones" id="funciones">
+                <a href="#" value="*">X</a>
+                <a href="#" value="/">%</a>
+                <a href="#" value="+">+</a>
+                <a href="#" value="-">-</a>
+            </div>
+            <div class="borrar" id="borrar">
+                <a href="#">AC</a>
+            </div>
+        </div>
+    </main>
+
     <!-- JAVASCRIPT CUSTOM -->
     <script src="js/script.js"></script>
 </body>
